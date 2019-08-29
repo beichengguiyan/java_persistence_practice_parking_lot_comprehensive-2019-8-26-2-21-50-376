@@ -1,12 +1,14 @@
 package tws.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Employee implements Serializable {
     private int id;
     private String name;
     private int age;
-
+    private List<Parkinglot> parkinglots = new ArrayList<Parkinglot>();
     public Employee() {
 
     }
@@ -40,4 +42,12 @@ public class Employee implements Serializable {
     public void setAge(int age) {
         this.age = age;
     }
+
+	public List<Parkinglot> getParkinglots() {
+		return parkinglots;
+	}
+
+	public void setParkinglots(List<Parkinglot> parkinglots) {
+		this.parkinglots = parkinglots;
+	}
 }

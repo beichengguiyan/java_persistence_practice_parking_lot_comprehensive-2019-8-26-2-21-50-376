@@ -10,4 +10,5 @@ import java.util.List;
 public interface EmployeeMapper {
     List<Employee> selectAll();
    void insert(@Param("employee") Employee employee);
+   Employee selectById(@Param("id") int id);
 }
