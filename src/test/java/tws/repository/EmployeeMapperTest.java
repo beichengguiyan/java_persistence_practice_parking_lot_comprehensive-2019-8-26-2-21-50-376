@@ -42,5 +42,5 @@ public class EmployeeMapperTest {
         List<Employee> employeeList = employeeMapper.selectAll();
         // then
         assertEquals(1, employeeList.size());
-    }
+    }  
 }
